@@ -9,81 +9,56 @@ description: 'Getting started with Wealth Manager Copilot as an Individual:'
 
 On the main page, locate and click the *"Register"* button in the bottom-left corner. This will take you to a role selection screen. If you are an individual investor, select the *"Individual"* option and proceed to enter the required information.
 
-![individual](media/17271685139041/individual.png)
-### Edit and preview
+<Frame>
+  <img src="/images/individual.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
-<AccordionGroup>
-  <Accordion icon="github" title="Clone your docs locally">
-    During the onboarding process, we created a repository on your Github with
-    your docs content. You can find this repository on our
-    [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally. 1. Install the
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-    documentation changes locally with this command: ``` npm i -g mintlify ```
-    2. Run the following command at the root of your documentation (where
-    `mint.json` is): ``` mintlify dev ```
-  </Accordion>
-</AccordionGroup>
+After completing the registration process, you will be redirected to the login page. Here, you can enter your credentials to access your account.
 
-### Deploy your changes
+### Upload and Download the Accounts
 
-<AccordionGroup>
+> Before uploading the files, ensure that there are no blank lines in the Excel sheet. This will help prevent any errors during the upload process.
 
-<Accordion icon="message-bot" title="Install our Github app">
-  Our Github app automatically deploys your changes to your docs site, so you
-  don't need to manage deployments yourself. You can find the link to install on
-  your [dashboard](https://dashboard.mintlify.com). Once the bot has been
-  successfully installed, there should be a check mark next to the commit hash
-  of the repo.
-</Accordion>
-<Accordion icon="rocket" title="Push your changes">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for your changes to update in your docs site. If you push and don't see that
-  the Github app successfully deployed your changes, you can also manually
-  update your docs through our [dashboard](https://dashboard.mintlify.com).
-</Accordion>
+After login, you will have a interface that looks like below:
 
-</AccordionGroup>
+<Frame>
+  <img src="/images/maininterface_individual.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
-## Update your docs
+Click on the red button located in the sidebar. 
 
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
+<Frame>
+  <img src="/images/sidebar.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
-<CardGroup>
+This will direct you to a page where you can upload the necessary data.
 
-<Card title="Style Your Docs" icon="paintbrush" href="/settings/global">
-  Add flair to your docs with personalized branding.
-</Card>
+<Frame>
+  <img src="/images/upload_individual.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
-<Card
-  title="Add API Endpoints"
-  icon="square-code"
-  href="/api-playground/configuration"
->
-  Implement your OpenAPI spec and enable API user interaction.
-</Card>
+**First**, click on the *“Download Investment Data”* button. This will provide you with a template in the correct format for recording the necessary data:
 
-<Card
-  title="Integrate Analytics"
-  icon="chart-mixed"
-  href="/analytics/supported-integrations"
->
-  Draw insights from user interactions with your documentation.
-</Card>
+<Frame>
+  <img src="/images/wealthdata.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
-<Card
-  title="Host on a Custom Domain"
-  icon="browser"
-  href="/settings/custom-domain/subdomain"
->
-  Keep your docs on your own website's subdomain.
-</Card>
+**Next**, please complete the following fields in the investment data, leaving the *"Account Number"* field blank, but with no blank lines:
 
-</CardGroup>
+-   **Investment Type**: Select the type of investment (choose one: Stock, Bond, Fund, or ETF).
+-   **Investment Symbol**: Provide the ticker symbol or identifier for the investment (e.g., "AAPL").
+-   **Investment Name**: Enter the name of the investment (e.g., "Apple Inc.").
+-   **Units Held**: Input the number of units or shares held.
+-   **Purchase Price**: Specify the price per unit or share at the time of purchase.
+-   **Purchase Date**: Record the date the investment was purchased.
+-   **Last Traded Price**: Enter the most recent traded price per unit or share.
+
+Once you've completed the steps above, the account information will be updated. You can verify the details by clicking on the first button in the sidebar. You should see something shown below:
+
+<Frame>
+  <img src="/images/interface_indi.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+## Analyzing Portfolio
+
+You can now access your personalized portfolio and ask investment-related questions to help guide your decision-making on potential portfolio adjustments.
