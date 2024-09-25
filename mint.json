@@ -15,16 +15,6 @@
       "to": "#07C983"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@bikef.mintlify.app"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.bikef.mintlify.app"
-  },
   "tabs": [
     {
       "name": "API Reference",
@@ -47,8 +37,8 @@
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "quickstart"
+        "usermanual",
+        "managermanual"
       ]
     }
   ],
