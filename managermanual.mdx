@@ -1,6 +1,6 @@
 ---
-title: 'Manager Guide'
-description: 'Getting started with Wealth Manager Copilot as a Wealth Manager:'
+title: 'Wealth Manager Guide'
+description: 'Getting started with Wealth Manager Copilot as a Wealth Manager'
 ---
 
 
@@ -20,20 +20,16 @@ On the main page, locate and click the *"Register"* button in the bottom-left co
 
 After completing the registration process, you will be redirected to the login page. Here, you can enter your credentials to access your account.
 
-### Upload and Download the Accounts
-
-> Before uploading the files, ensure that there are no blank lines in the Excel sheet. This will help prevent any errors during the upload process.
-
 After login, you will have a interface that looks like below:
 
 <Frame>
   <img src="/images/manager-manual/mainpage.png" style={{ borderRadius: '0.5rem' }} />
 </Frame>
 
-Click on the red button located in the sidebar. 
+Click Data menu in the sidebar.
 
 <Frame>
-  <img src="/images/manager-manual/sidebar.png" style={{ borderRadius: '0.5rem' }} />
+  <img src="/images/manager-manual/buttons.png" style={{ borderRadius: '0.5rem' }} />
 </Frame>
 
 This will direct you to a page where you can upload the necessary data.
@@ -41,6 +37,8 @@ This will direct you to a page where you can upload the necessary data.
 <Frame>
   <img src="/images/manager-manual/upload_page.png" style={{ borderRadius: '0.5rem' }} />
 </Frame>
+
+## Initiate Account Data
 
 **First**, click on the *“Download User Data”* button. This will provide you with a template in the correct format for recording the necessary data:
 
@@ -61,13 +59,17 @@ In the user data form, please complete the following columns, leaving the *"Acco
 -   **Portfolio Type**: The type of portfolio (select one: Individual, Joint, or Retirement).
 -   **Goal**: The target of the portfolio (e.g., "Steady income generation").
 
-Once you upload the Excel file with the completed information, the system will automatically generate an *“Account Number”* for each account owner. You can then download the updated file with the account numbers included. Example shown below:
+> Before uploading the files, ensure that there are no blank lines in the Excel sheet. This will help prevent any errors during the upload process.
+
+**Next**, once you upload the Excel file with the completed information, the system will automatically generate an *“Account Number”* for each account owner. You can then download the updated file with the account numbers included. Example shown below:
 
 <Frame>
   <img src="/images/manager-manual/afterupload-example.png" style={{ borderRadius: '0.5rem' }} />
 </Frame>
 
-**Next**, click on the *“Download Investment Data”* button. This will provide you with a template in the correct format for recording the investment data:
+## Initiate Investment Data
+
+**First**, click on the *“Download Investment Data”* button. This will provide you with a template in the correct format for recording the investment data:
 
 <Frame>
   <img src="/images/manager-manual/wealthdata.png" style={{ borderRadius: '0.5rem' }} />
@@ -84,7 +86,9 @@ In the investment data, please complete the following fields, you should not inc
 -   **Purchase Date**: Record the date the investment was purchased.
 -   **Last Traded Price**: Enter the most recent traded price per unit or share.
 
-Once you've completed the steps above, the account information will be updated. You can verify the details by clicking on the first two buttons in the sidebar. You should see something shown below.
+> Before uploading the files, ensure that there are no blank lines in the Excel sheet. This will help prevent any errors during the upload process.
+
+**Next**, once you've completed the steps above, the account information will be updated. You can verify the details by clicking on the first two buttons in the sidebar. You should see something shown below.
 
 The main interface after uploading both file:
 
@@ -97,3 +101,98 @@ The account page after uploading both file:
 <Frame>
   <img src="/images/manager-manual/accounts_page.png" style={{ borderRadius: '0.5rem' }} />
 </Frame>
+
+## Modifying Portfolio Information
+
+You can modify the assets in each portfolio by following the same steps outlined earlier for uploading investment data. Simply update the necessary fields in the Excel file and re-upload it to reflect the changes.
+
+The workflow of this process looks like below:
+
+```mermaid
+graph LR
+A[Upload New Investment Data] -- Modifies the data --> B[Present New Investment Data in Main Interface]
+```
+
+### Update Account Data
+
+To update existing account data, edit the original uploaded file by entering the new information. For new accounts, leave the "Account Number" field blank. Please ensure the following fields are completed:
+
+-   **First Name**: The first name of the account owner.
+-   **Last Name**: The last name of the account owner.
+-   **Date of Birth**: The account owner's date of birth.
+-   **Email**: The email address of the account owner.
+-   **Phone Number**: The account owner's phone number.
+-   **Address**: The residential address of the account owner.
+-   **Risk Tolerance**: The client's risk tolerance level (choose one: Low, Medium, High).
+-   **Investment Objective**: The client's primary investment objective (choose one: Growth, Income, Capital Preservation, or Speculation).
+-   **Portfolio Name**: The name of the portfolio (e.g., "Retirement Fund").
+-   **Portfolio Type**: The type of portfolio (select one: Individual, Joint, or Retirement).
+-   **Goal**: The target of the portfolio (e.g., "Steady income generation").
+
+The updated file should look like below:
+
+<Frame>
+  <img src="/images/manager-manual/update_manager.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+Once you have filled in the necessary details, upload the updated file through the portal.
+
+<Frame>
+  <img src="/images/manager-manual/upload_page.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+> Make sure you keep all the existing accounts and add the new account in the file.
+
+### Update Investment Data
+To update your investment data, follow these steps:
+
+1. Click *"Download User Data"* to retrieve the corresponding account number. You should get a file that looks like below:
+
+<Frame>
+  <img src="/images/manager-manual/beforeupdate_manager.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+2. Enter the new investment details into the original uploaded file. Make sure the following fields are completed:
+
+    -   **Account Number**: Enter the corresponding account number.
+    -   **Investment Type**: Select the type of investment (choose one: Stock, Bond, Fund, or ETF).
+    -   **Investment Symbol**: Provide the ticker symbol or identifier for the investment (e.g., "AAPL").
+    -   **Investment Name**: Enter the name of the investment (e.g., "Apple Inc.").
+    -   **Units Held**: Input the number of units or shares held.
+    -   **Purchase Price**: Specify the price per unit or share at the time of purchase.
+    -   **Purchase Date**: Record the date the investment was purchased.
+    -   **Last Traded Price**: Enter the most recent traded price per unit or share.
+
+3. Once updated, upload the file through this portal.
+
+<Frame>
+  <img src="/images/manager-manual/upload_page.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+## Analyze & Chat
+
+Once you have imported all the necessary data, navigate to the main interface. If the data was updated successfully, the interface should resemble the following:
+
+<Frame>
+  <img src="/images/manager-manual/main_up.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+Next, click the *"Accounts"* button in the sidebar. You will then see the following:
+
+<Frame>
+  <img src="/images/manager-manual/account_up.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+After selecting any individual account, you will see a screen similar to the following:
+
+<Frame>
+  <img src="/images/manager-manual/analyze_account.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+Click the *"Analyze"* button located in the top right corner to begin analyzing your data through a conversation with the copilot.
+
+<Frame>
+  <img src="/images/manager-manual/chat.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+> All data presented in this example are for illustrative purposes only and do not constitute investment advice or guidance. The information provided should not be used for decision-making or relied upon as an indicator of actual market performance.
